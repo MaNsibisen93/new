@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contai{
+            height: 100vh;
+            width: 100vw;
+            border: 10px solid red; 
+        }
+        .box{
+            height: 52px;
+            width: 200px;
+            background-color: rgb(104, 104, 223);
+            margin: 10px;
+            animation: box1;
+            position: relative;
+            animation-duration: 2s;
+            animation-timing-function:linear ;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; 
+        }
+            @keyframes box1 {
+                from{
+                    left: 0px;
+                }
+                to{
+                    left: 1600px;
+                }
+
+            }
+
+            .box2{
+             height: 52px;
+            width: 200px;
+            background-color: rgb(104, 104, 223);
+            margin: 7px;
+            animation: box22;
+            top: 500px;
+            position: relative;
+            animation-duration: 2s;
+            animation-timing-function:linear ;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; 
+        }
+            @keyframes box22 {
+                from{
+                    left: 0px;
+                }
+                to{
+                    left: 1600px;
+                }
+
+            }
+        .boll{
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(yellow,skyblue);
+            border-radius: 100%;
+            animation: ball;
+            position: relative;
+            animation-duration: 2s;
+            animation-timing-function:linear ;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; 
+        
+        }   
+        @keyframes ball {
+            0%{
+                top: 5%;
+                left: 5%;
+
+            }
+            30%{
+                 top: 5%;
+                 left: 90%;
+            }
+            60%{   
+                top: 50%;
+                left: 5%;
+
+            }
+            90%{
+                 top: 90%;
+                 right:5%;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contai">
+        <div class="box"></div>
+        <div class="boll"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

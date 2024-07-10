@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .d1{
+             height: 100vh;
+             width: 100vw;
+             border: 10px solid black;
+        }
+        .d2{
+            height: 60px;
+            width: 200px;
+            background-color: green;
+            margin: 20px;
+            animation: dibba1  ;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            position: relative;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes dibba1 {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1450px;
+            }
+            
+        }
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background:linear-gradient(rgb(234, 236, 69), green);
+            margin: 20px;
+            animation:balll2 ;
+            position:relative;
+            animation-direction: alternate;
+            animation-duration: 2s;
+            animation-timing-function:linear ;
+            animation-iteration-count: infinite;
+        }
+        @keyframes balll2 {
+            from{
+                top: 0px;
+                transform: rotate(0deg);
+                
+                
+            }
+            to{
+               top: 550px;
+               transform: rotate(360deg);
+            }
+            
+        }
+
+        .d3{
+            height: 60px;
+            width: 200px;
+            background-color: lightgreen;
+            margin: 20px;
+            animation: dibba2;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            position:  relative;
+            animation-direction: alternate-reverse;
+            top: 500px;
+
+        }
+        @keyframes dibba2 {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1450px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="d1"> 
+        <div class="d2"></div>
+        <div class="ball"></div>
+        <div class="d3"></div>
+    </div>
+    
+</body>
+</html>

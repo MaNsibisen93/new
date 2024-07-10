@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1{
+            border: 2px solid black;
+            background-color: rgb(240, 64, 131);
+            height: 400px;
+            width: 700px;
+            display: flex;
+            
+
+        }
+        .d2{
+            border: 2px solid black;
+            height: 300px;
+            width:300px;
+            
+           
+           
+        }
+        .d3{
+            border: 2px solid black;
+            height: 300px;
+            width:300px;
+            
+        }
+        
+        @media (max-width:500px) {
+            .d3{
+                flex-direction: row;
+                
+            }
+            .d2{
+                height: 200px;
+                width: 700px;
+            }
+            .d1{
+                height: 800px;
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+       <div class="d2">
+            <div class="p">
+                <p>paragraph1</p>
+                <p>paragraph2</p>
+            </div>
+       </div>
+       <div class="d3">
+        <img src="photo.jpg" alt="" height="295px" width="295px">
+       </div>
+    </div>
+</body>
+</html>

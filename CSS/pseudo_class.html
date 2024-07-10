@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: brown;
+    }
+    .container:hover{
+        background-color: yellow;
+        height: 300px;
+        width: 300px;
+    }
+    input{
+        background-color: aqua;
+    }
+    input:hover{
+        background-color: rgb(91, 114, 26);   
+     }
+     input:focus{
+        background-color: darksalmon;
+     }
+     li:first-child{
+        color: blue;
+     }
+     li:nth-last-of-type(even){
+        color: black;
+     }
+     
+     p::first-letter{       /*first letter or line edit  */
+        font-size: 40px;
+      }
+
+       p::after{    /* for emoji */
+        content: "\26c5";
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="container"> -->
+        <input type="text">
+         <ul>
+            <li>dal</li>
+            <li>paneer</li>
+            <li>uu</li>
+        </ul>zhg
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, perferendis?
+    </p>
+    
+</body>
+</html>

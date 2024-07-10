@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            background-color: black;
+            display: flex;
+            height: 60px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 24px;
+        }
+        .name{
+            color: aqua;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .inner-navbar{
+            display: flex;
+            justify-content: center;
+           
+        }
+        .navlink{
+            color: lightseagreen;
+            text-decoration: none;
+            padding: 16px;
+           font-weight: 900;
+        }
+        .btn{
+            background-color: gold;
+            border-radius:10px;
+            height: 30px;
+            width: 50px;
+            cursor: pointer;
+            font-weight: 900;
+        }
+        @media (max-width:630px) {
+            .navabr{
+              flex-direction: column;
+              text-align: center;
+              height: auto;
+            }
+            .name{
+                padding: 0 80px;
+            }
+            .inner-navbar{
+                flex-direction: column;
+                justify-content: center;
+                height: auto;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="name">Mansi Bisen</a>
+        <div class="inner-navbar">
+            <a href="#" class="navlink">Home</a>
+            <a href="#" class="navlink">About</a>
+            <a href="#" class="navlink">Skills</a>
+            <a href="#" class="navlink">contact</a>
+        </div>
+        <button class="btn">Login</button>
+    </div>
+</body>
+</html>

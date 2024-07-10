@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOVE CALCULATOR</title>
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210123/pngtree-little-bird-love-big-tree-couple-valentines-day-paper-cut-background-image_539154.jpg');
+        background-repeat: no-repeat; /* Prevent image from repeating */
+        background-size: cover; /* Cover the entire background */
+        background-position: center; /* Center the background image */
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+    #container {
+        margin-top: 100px;
+    }
+    h1 {
+        color: blueviolet;
+    }
+    #result {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+</style>
+
+</head>
+<body>
+<div id="container">
+    <h1>Love Calculator</h1>
+    <label for="name1">Person 1 Name:</label>
+    <input type="text" id="name1" placeholder="Enter name"><br><br>
+    <label for="name2">Person 2 Name:</label>
+    <input type="text" id="name2" placeholder="Enter name"><br><br>
+    <button type="button" onclick="calculateLove()">Calculate</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateLove() {
+        var name1 = document.getElementById('name1').value.trim();
+        var name2 = document.getElementById('name2').value.trim();
+
+        if (name1 === '' || name2 === '') {
+            alert('Please enter both names');
+            return;
+        }
+
+        var lovePercentage = generateLovePercentage(name1, name2);
+        displayResult(lovePercentage);
+    }
+
+    function generateLovePercentage(name1, name2) {
+        var combinedNames = (name1 + name2).toLowerCase();
+        var loveCount = 0;
+
+        for (var i = 0; i < combinedNames.length; i++) {
+            loveCount += combinedNames.charCodeAt(i);
+        }
+
+        return loveCount % 101;
+    }
+
+    function displayResult(lovePercentage) {
+        var resultDiv = document.getElementById('result');
+        var message = "The love percentage between these two people is " + lovePercentage + "%.";
+        resultDiv.textContent = message;
+    }
+</script>
+</body>
+</html>

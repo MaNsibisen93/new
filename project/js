@@ -1,0 +1,26 @@
+<!-- // callbacks- promises-async , await
+
+// js is single thread language
+
+// v8 engine components(asynchronous function)
+
+// 1.callStack  - windows(wait ni krta sbi ko ik sath execute karta hai)
+// 2. Waiting queue(Asynchronous function ko handle karta hai )
+// 3. READY QUEUE (jinko time chahiy tha loading hone me wo yha atae h)
+// 4.MICROTASK QUEUE(jo function pehle aya tha usko pehle execute karwayga(jab do event k time same ho tab))
+// 5.EVENT LOOP(callstack and ready queue ko moniter karta hai) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

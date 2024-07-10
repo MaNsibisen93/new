@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            margin: 2px;
+            background-color: black;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 24px;
+            font-weight: 900;
+            
+        }
+        .navlink{
+
+            font-size: 22px;
+            text-decoration: none;
+            color: rgb(197, 136, 21);
+
+        }
+        .inner-navbar{
+            display: flex;
+            justify-content: center;
+
+        }
+        .inner-navlink{
+            color: aliceblue;
+            text-decoration: none;
+            padding:16px ;
+            font-size: 20px;
+        }
+        .btn{
+            background-color: orange;
+            text-decoration: none;
+            color: aliceblue;
+            padding: 4px 16px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        @media (max-width:630px) {
+            .navbar{
+                  flex-direction:column ;
+                  height: auto;
+                  text-align: center;
+            }
+            .navlink{
+                border-bottom: 1px solid gray;
+                padding: 8px 0px;
+            }
+            .inner-navbar{
+                flex-direction: column;
+                text-align: center;
+                width: 100px;
+            }
+            .inner-navlink{
+                padding: 8px 0px;
+                border-bottom: 1px solid gray;
+            }
+            .btn{
+                width: 50px;
+                padding: 8px 0px;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navlink">coding thinker</a>
+
+        <div class="inner-navbar">
+            <a href="#" class="inner-navlink">home</a>
+            <a href="#" class="inner-navlink">support</a>
+            <a href="#" class="inner-navlink">help</a>
+            <a href="#" class="inner-navlink">contact</a>
+        </div>
+          <a href="" class="btn">login</a>
+    </div>
+</body>
+</html>
