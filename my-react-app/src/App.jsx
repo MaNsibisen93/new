@@ -58,9 +58,11 @@
 
 import React from 'react'
 
-const App = () => {
+function App() {
   return (
-    <div></div>
+    <div>
+      <p>hello</p>
+    </div>
   )
 }
 
